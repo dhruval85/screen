@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+    <nav>
+        <div class="navimg"><img src="cflogo.jpg" alt="Logo"></div>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Activities</a></li>
+            <li><a>Message</a></li>
+            <li class="profile-section"><img src="profile.jpg" alt="profile" class="profile-icon"><a class="profile-name">Michel</a></li>
+            <li><a>Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left">
+        
+            
+            <div class="profile-icon-container">
+                <img src="profile.jpg" alt="Profile" class="profile-icon">
+            </div>
+            <button class="edit-button">Edit Profile</button>
+            <div class="bioHeading"><b>short bio</b></div>
+            <div class="bio">Michael Bierut is a highly respected exercise professional with a diverse and varied skillset. With over 10 years’ experience in the sector, “If you want to get in shape fast, Scott Laidler offers a six-week training plan – including a meal planner – to help. Tell Laidler your needs and he’ll design a program specifically for you.</div>
+            <div class="info-column">
+                <div class="info-item" onclick="showInfo('followers')">
+                    <span>Followers: </span><span id="followers-count" class="count">100</span>
+                </div>
+                <div class="info-item" onclick="showInfo('following')">
+                    <span>Following: </span><span id="following-count"  class="count">50</span>
+                </div>
+                <div class="info-item" onclick="showInfo('trophies')">
+                    <span>Trophies: </span><span id="trophies-count"  class="count">10</span>
+                </div>
+                <div class="info-item" onclick="showInfo('subscribed')">
+                    <span>Subscribed Activities: </span><span id="subscribed-count"  class="count">3</span>
+                </div>
+            </div>
+
+            <div id="info-display"  style="display: none;"></div>
+        
+        </div>
+        <div class="center">
+
+            <div class="feed">
+                <!-- Post 1 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="Kai-Greene.jpg" alt="Profile" class="profile-icon">
+                        <div class="post-user-info">
+                            <span class="post-username">kai_ Greene</span>
+                            <span class="post-date">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Had an amazing Workout Session!</p>
+                        <img src="Bodybuilder-workout.webp" alt="Mountains" class="post-image">
+                    </div>
+                    <div class="post-footer">
+                        <div class="like-comment">
+                            <button class="like-btn">Like</button>
+                        
+                        </div>
+                        <div class="comment-section">
+                            <textarea class="comment-input" placeholder="Write a comment..."></textarea>
+                            <button class="post-comment-btn">Post</button>
+                            <div class="comments">
+                                <div class="comment">
+                                    <span class="comment-username">Jane Smith:</span>
+                                    <span class="comment-text">Looks amazing!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 2 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="sdelal-sebya-sam_.jpg" alt="Profile" class="profile-icon">
+                        <div class="post-user-info">
+                            <span class="post-username">sebya sam</span>
+                            <span class="post-date">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>different day, same relentless grind.</p>
+                        <img src="calisthetics.jpg" alt="Mountains" class="post-image">
+                    </div>
+                    <div class="post-footer">
+                        <div class="like-comment">
+                            <button class="like-btn">Like</button>
+                        
+                        </div>
+                        <div class="comment-section">
+                            <textarea class="comment-input" placeholder="Write a comment..."></textarea>
+                            <button class="post-comment-btn">Post</button>
+                            <div class="comments">
+                                <div class="comment">
+                                    <span class="comment-username">Daniel Hristov:</span>
+                                    <span class="comment-text">Nice </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="right">
+
+             <!-- Notifications Panel -->
+             <div class="panel notifications-panel">
+                <h3>Notifications</h3>
+                <ul class="notification-list">
+                    <li class="notification-item">
+                        John liked your post. <span class="notification-time">2 hours ago</span>
+                    </li>
+                    <li class="notification-item">
+                        Anna commented on your photo. <span class="notification-time">5 hours ago</span>
+                    </li>
+                    <li class="notification-item">
+                        You have a new follower: Mark. <span class="notification-time">1 day ago</span>
+                    </li>
+                </ul>
+            </div><br><br><br>
+        
+            <!-- Messages Panel -->
+            <div class="panel messages-panel">
+                <h3>Messages</h3>
+                <ul class="message-list">
+                    <li class="message-item unread">
+                        <span class="message-sender">Jane:</span> Are you coming to the meeting? 
+                        <span class="message-time">10 mins ago</span>
+                        <button class="reply-button">Reply</button>
+                    </li>
+                    <li class="message-item unread">
+                        <span class="message-sender">Mark:</span> Hey! Long time no see.
+                        <span class="message-time">30 mins ago</span>
+                        <button class="reply-button">Reply</button>
+                    </li>
+                    <li class="message-item">
+                        <span class="message-sender">Sarah:</span> Thanks for the help!
+                        <span class="message-time">1 hour ago</span>
+                        <button class="reply-button">Reply</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
